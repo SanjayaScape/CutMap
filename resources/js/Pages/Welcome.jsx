@@ -3,8 +3,6 @@ import { Head, Link } from '@inertiajs/react';
 import CutMapLogo from '@/Components/CutMapLogo';
 
 export default function Welcome() {
-    const [selectedTab, setSelectedTab] = useState('optionA');
-
     return (
         <div className="min-h-screen bg-warm-bg text-charcoal font-sans antialiased selection:bg-brand selection:text-white">
             <Head title="CutMap — AI-Assisted Fabric Cutting & 2D Nesting Optimizer" />
@@ -136,112 +134,6 @@ export default function Welcome() {
                             </svg>
                             Export SVG Vector CAD
                         </span>
-                    </div>
-
-                    {/* Centered Showcase Card: Interactive CAD Nesting Preview */}
-                    <div className="pt-6 max-w-4xl mx-auto">
-                        <div className="bg-surface rounded-2xl border border-brand-border/60 shadow-xl p-5 sm:p-6 backdrop-blur-md text-left">
-                            {/* Top Control Bar */}
-                            <div className="flex flex-wrap items-center justify-between pb-4 mb-4 border-b border-surface-border gap-3">
-                                <div className="flex items-center gap-2">
-                                    <span className="w-3 h-3 rounded-full bg-red-400" />
-                                    <span className="w-3 h-3 rounded-full bg-yellow-400" />
-                                    <span className="w-3 h-3 rounded-full bg-brand" />
-                                    <span className="ml-2 text-xs font-mono text-charcoal-muted font-medium">
-                                        canvas_preview.cad • Roll 150 × 100 cm
-                                    </span>
-                                </div>
-                                <div className="flex items-center gap-2">
-                                    <span className="text-[11px] font-mono font-medium px-2.5 py-0.5 rounded bg-brand-light text-brand border border-brand-border">
-                                        AI OPTION A (MAX DENSITY)
-                                    </span>
-                                    <span className="text-xs font-mono font-bold text-brand bg-brand-light px-2.5 py-0.5 rounded-full border border-brand/20">
-                                        93.8% UTILISASI
-                                    </span>
-                                </div>
-                            </div>
-
-                            {/* Simulated CAD Nesting Canvas */}
-                            <div className="w-full h-64 sm:h-72 bg-warm-bg rounded-xl border border-dashed border-brand/40 relative overflow-hidden p-3 select-none">
-                                {/* Grid Pattern */}
-                                <div 
-                                    className="absolute inset-0 opacity-20 pointer-events-none"
-                                    style={{
-                                        backgroundImage: 'linear-gradient(to right, #2B07BB 1px, transparent 1px), linear-gradient(to bottom, #2B07BB 1px, transparent 1px)',
-                                        backgroundSize: '24px 24px'
-                                    }}
-                                />
-
-                                {/* Dimension Labels */}
-                                <div className="absolute top-2 left-3 text-[10px] font-mono text-charcoal-light">0,0 cm</div>
-                                <div className="absolute top-2 right-3 text-[10px] font-mono text-charcoal-light">150 cm</div>
-                                <div className="absolute bottom-2 left-3 text-[10px] font-mono text-charcoal-light">100 cm</div>
-
-                                {/* Nested Garment Patterns (Blue Tone: #2B07BB) */}
-                                {/* Pattern 1: T-Shirt Front */}
-                                <div className="absolute top-7 left-6 w-36 h-48 bg-surface border-2 border-brand rounded-t-3xl p-2.5 shadow-sm flex flex-col justify-between hover:scale-[1.02] transition cursor-pointer">
-                                    <div className="flex items-center justify-between text-[9px] font-mono text-brand font-semibold">
-                                        <span>TSHIRT_FRONT_L</span>
-                                        <span className="bg-brand-subtle text-brand px-1 rounded">0°</span>
-                                    </div>
-                                    <div className="text-center py-4">
-                                        <span className="text-xs font-bold text-charcoal block">Badan Depan (L)</span>
-                                        <span className="text-[9px] font-mono text-charcoal-muted">54 × 70 cm</span>
-                                    </div>
-                                    <div className="text-[8px] font-mono text-charcoal-light text-right">Grain: Vertical</div>
-                                </div>
-
-                                {/* Pattern 2: T-Shirt Back */}
-                                <div className="absolute top-7 left-44 w-36 h-48 bg-brand-light/70 border-2 border-brand rounded-t-3xl p-2.5 shadow-sm flex flex-col justify-between hover:scale-[1.02] transition cursor-pointer">
-                                    <div className="flex items-center justify-between text-[9px] font-mono text-brand font-semibold">
-                                        <span>TSHIRT_BACK_L</span>
-                                        <span className="bg-brand-subtle text-brand px-1 rounded">180°</span>
-                                    </div>
-                                    <div className="text-center py-4">
-                                        <span className="text-xs font-bold text-charcoal block">Badan Belakang (L)</span>
-                                        <span className="text-[9px] font-mono text-charcoal-muted">54 × 72 cm</span>
-                                    </div>
-                                    <div className="text-[8px] font-mono text-charcoal-light text-right">Grain: Inverted</div>
-                                </div>
-
-                                {/* Pattern 3: Sleeve Left */}
-                                <div className="absolute top-7 right-6 w-28 h-26 bg-brand-light border-2 border-brand rounded-t-xl p-2 flex flex-col justify-between hover:scale-[1.02] transition cursor-pointer">
-                                    <span className="text-[9px] font-mono text-brand font-semibold">SLEEVE_LEFT</span>
-                                    <span className="text-[11px] font-bold text-charcoal text-center">Lengan Kiri</span>
-                                    <span className="text-[8px] font-mono text-charcoal-muted text-center">24 × 22 cm</span>
-                                </div>
-
-                                {/* Pattern 4: Sleeve Right */}
-                                <div className="absolute bottom-6 right-6 w-28 h-26 bg-brand-light border-2 border-brand rounded-t-xl p-2 flex flex-col justify-between hover:scale-[1.02] transition cursor-pointer">
-                                    <span className="text-[9px] font-mono text-brand font-semibold">SLEEVE_RIGHT</span>
-                                    <span className="text-[11px] font-bold text-charcoal text-center">Lengan Kanan</span>
-                                    <span className="text-[8px] font-mono text-charcoal-muted text-center">24 × 22 cm</span>
-                                </div>
-
-                                {/* Pattern 5: Collar Band */}
-                                <div className="absolute bottom-6 left-6 w-72 h-9 bg-surface border border-brand rounded p-1.5 flex items-center justify-between text-[10px] font-mono text-brand">
-                                    <span className="font-semibold">RIB_COLLAR_BAND</span>
-                                    <span className="text-charcoal-muted">48 × 4 cm</span>
-                                    <span className="text-[9px] bg-brand-light text-brand px-1.5 py-0.2 rounded font-bold border border-brand/20">0 Overlap</span>
-                                </div>
-                            </div>
-
-                            {/* Canvas Metrics Summary */}
-                            <div className="mt-4 pt-3 border-t border-surface-border grid grid-cols-3 gap-3 text-center">
-                                <div className="p-2.5 rounded-lg bg-warm-bg border border-surface-border">
-                                    <div className="text-[10px] font-mono text-charcoal-muted uppercase">Luas Bahan</div>
-                                    <div className="text-sm font-mono font-bold text-charcoal">1.50 m²</div>
-                                </div>
-                                <div className="p-2.5 rounded-lg bg-brand-light border border-brand-border">
-                                    <div className="text-[10px] font-mono text-brand uppercase font-medium">Total Terpakai</div>
-                                    <div className="text-sm font-mono font-bold text-brand">1.41 m²</div>
-                                </div>
-                                <div className="p-2.5 rounded-lg bg-surface border border-surface-border">
-                                    <div className="text-[10px] font-mono text-charcoal-muted uppercase">Sisa / Scrap</div>
-                                    <div className="text-sm font-mono font-bold text-amber-600">6.2% (0.09 m²)</div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
