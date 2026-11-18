@@ -52,7 +52,7 @@ export default function Dashboard() {
             piecesCount: 200,
             date: '10 menit lalu',
             status: 'Optimal',
-            previewColor: '#1f6347',
+            previewColor: '#2B07BB',
         },
         {
             id: 'CP-2026-088',
@@ -63,7 +63,7 @@ export default function Dashboard() {
             piecesCount: 48,
             date: '2 jam lalu',
             status: 'Optimal',
-            previewColor: '#2b7a58',
+            previewColor: '#4318d1',
         },
         {
             id: 'CP-2026-087',
@@ -85,7 +85,7 @@ export default function Dashboard() {
             piecesCount: 84,
             date: '15 Nov 2026',
             status: 'Optimal',
-            previewColor: '#1f6347',
+            previewColor: '#2B07BB',
         },
     ];
 

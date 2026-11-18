@@ -64,7 +64,7 @@ export default function AuthenticatedLayout({ header, actions, children }) {
                     <div className="p-4">
                         <Link
                             href="/cut-plan/new"
-                            className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-forest hover:bg-forest-hover text-white text-sm font-medium shadow-sm transition-all duration-150 group"
+                            className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-brand hover:bg-brand-hover text-white text-sm font-medium shadow-sm transition-all duration-150 group"
                         >
                             <svg className="w-4 h-4 transition-transform group-hover:rotate-90 duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.2" d="M12 4v16m8-8H4" />
@@ -86,11 +86,11 @@ export default function AuthenticatedLayout({ header, actions, children }) {
                                     href={item.href}
                                     className={`flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-150 ${
                                         active
-                                            ? 'bg-sage/50 text-forest font-semibold'
+                                            ? 'bg-brand-light text-brand font-semibold'
                                             : 'text-charcoal-muted hover:text-charcoal hover:bg-warm-bg'
                                     }`}
                                 >
-                                    <span className={active ? 'text-forest' : 'text-charcoal-muted'}>
+                                    <span className={active ? 'text-brand' : 'text-charcoal-muted'}>
                                         {item.icon}
                                     </span>
                                     <span>{item.name}</span>
@@ -109,13 +109,13 @@ export default function AuthenticatedLayout({ header, actions, children }) {
                 <div className="p-4 border-t border-surface-border bg-warm-bg/50">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 rounded-full bg-forest text-white font-mono text-xs flex items-center justify-center font-medium">
+                            <div className="w-8 h-8 rounded-full bg-brand text-white font-mono text-xs flex items-center justify-center font-medium shadow-xs">
                                 AT
                             </div>
                             <div className="text-xs">
                                 <div className="font-semibold text-charcoal truncate max-w-[110px]">Atelier Studio</div>
-                                <div className="text-[10px] font-mono text-forest flex items-center gap-1">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-forest" />
+                                <div className="text-[10px] font-mono text-brand flex items-center gap-1 font-medium">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-brand" />
                                     Pro Fabric Plan
                                 </div>
                             </div>

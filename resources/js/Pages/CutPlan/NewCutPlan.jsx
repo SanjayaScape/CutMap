@@ -292,9 +292,9 @@ export default function NewCutPlan() {
                                             {/* Irregular Fabric Polygon */}
                                             <polygon
                                                 points="40,30 520,40 560,190 320,210 120,180 50,110"
-                                                fill="#dce7df"
+                                                fill="#ede9fe"
                                                 fillOpacity="0.5"
-                                                stroke="#1f6347"
+                                                stroke="#2B07BB"
                                                 strokeWidth="2"
                                                 strokeDasharray="4 2"
                                             />
@@ -303,8 +303,8 @@ export default function NewCutPlan() {
                                                 [40, 30], [520, 40], [560, 190], [320, 210], [120, 180], [50, 110]
                                             ].map(([x, y], i) => (
                                                 <g key={i}>
-                                                    <circle cx={x} cy={y} r="6" fill="#1f6347" className="cursor-move hover:scale-125 transition" />
-                                                    <text x={x + 10} y={y - 5} fill="#1f6347" fontSize="10" fontFamily="JetBrains Mono">
+                                                    <circle cx={x} cy={y} r="6" fill="#2B07BB" className="cursor-move hover:scale-125 transition" />
+                                                    <text x={x + 10} y={y - 5} fill="#2B07BB" fontSize="10" fontFamily="JetBrains Mono">
                                                         V{i + 1}
                                                     </text>
                                                 </g>
@@ -729,8 +729,8 @@ export default function NewCutPlan() {
                                     className="absolute inset-0 opacity-20 pointer-events-none"
                                     style={{
                                         backgroundImage: canvasTheme === 'dark'
-                                            ? 'linear-gradient(to right, #4ade80 1px, transparent 1px), linear-gradient(to bottom, #4ade80 1px, transparent 1px)'
-                                            : 'linear-gradient(to right, #1f6347 1px, transparent 1px), linear-gradient(to bottom, #1f6347 1px, transparent 1px)',
+                                            ? 'linear-gradient(to right, #818cf8 1px, transparent 1px), linear-gradient(to bottom, #818cf8 1px, transparent 1px)'
+                                            : 'linear-gradient(to right, #2B07BB 1px, transparent 1px), linear-gradient(to bottom, #2B07BB 1px, transparent 1px)',
                                         backgroundSize: '25px 25px'
                                     }}
                                 />

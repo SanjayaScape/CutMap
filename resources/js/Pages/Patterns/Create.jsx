@@ -176,16 +176,16 @@ export default function CustomPatternEditor() {
                                         {/* Detected garment contour */}
                                         <path
                                             d="M40 30 L260 30 L280 180 L200 200 L120 200 L30 150 Z"
-                                            fill="#dce7df"
+                                            fill="#ede9fe"
                                             fillOpacity="0.4"
-                                            stroke="#1f6347"
+                                            stroke="#2B07BB"
                                             strokeWidth="2.5"
                                         />
                                         {/* Vertices */}
                                         {[
                                             [40, 30], [260, 30], [280, 180], [200, 200], [120, 200], [30, 150]
                                         ].map(([x, y], idx) => (
-                                            <circle key={idx} cx={x} cy={y} r="5" fill="#1f6347" className="cursor-pointer" />
+                                            <circle key={idx} cx={x} cy={y} r="5" fill="#2B07BB" className="cursor-pointer" />
                                         ))}
                                     </svg>
                                 </div>
@@ -231,7 +231,7 @@ export default function CustomPatternEditor() {
                                 <div 
                                     className="absolute inset-0 opacity-20 pointer-events-none"
                                     style={{
-                                        backgroundImage: 'linear-gradient(to right, #1f6347 1px, transparent 1px), linear-gradient(to bottom, #1f6347 1px, transparent 1px)',
+                                        backgroundImage: 'linear-gradient(to right, #2B07BB 1px, transparent 1px), linear-gradient(to bottom, #2B07BB 1px, transparent 1px)',
                                         backgroundSize: '20px 20px'
                                     }}
                                 />

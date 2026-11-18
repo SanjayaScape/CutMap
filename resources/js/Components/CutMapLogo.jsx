@@ -4,7 +4,7 @@ export default function CutMapLogo({ className = 'h-8 w-auto', showText = true, 
     return (
         <div className="flex items-center gap-2.5 select-none">
             {/* CAD / Cutting Nesting Icon */}
-            <div className="relative flex items-center justify-center h-9 w-9 rounded-lg bg-forest text-white shadow-sm overflow-hidden border border-forest-dark">
+            <div className="relative flex items-center justify-center h-9 w-9 rounded-lg bg-brand text-white shadow-sm overflow-hidden border border-brand-dark">
                 <svg
                     viewBox="0 0 36 36"
                     fill="none"
@@ -12,12 +12,12 @@ export default function CutMapLogo({ className = 'h-8 w-auto', showText = true, 
                     className="h-5 w-5"
                 >
                     {/* Outer Fabric Outline */}
-                    <rect x="3" y="3" width="30" height="30" rx="3" stroke="#dce7df" strokeWidth="1.5" strokeDasharray="3 2" />
+                    <rect x="3" y="3" width="30" height="30" rx="3" stroke="#d5ccfa" strokeWidth="1.5" strokeDasharray="3 2" />
                     
                     {/* Nested Pattern Piece 1 */}
                     <path
                         d="M6 7H18V19H6V7Z"
-                        fill="#dce7df"
+                        fill="#ede9fe"
                         fillOpacity="0.85"
                     />
                     
@@ -43,8 +43,8 @@ export default function CutMapLogo({ className = 'h-8 w-auto', showText = true, 
             {showText && (
                 <div className="flex flex-col">
                     <span className={`font-semibold tracking-tight text-charcoal font-sans flex items-center gap-1 ${textClassName}`}>
-                        Cut<span className="text-forest">Map</span>
-                        <span className="inline-block text-[10px] font-mono font-medium px-1.5 py-0.2 rounded bg-sage/60 text-forest border border-sage-dark/40">
+                        Cut<span className="text-brand">Map</span>
+                        <span className="inline-block text-[10px] font-mono font-medium px-1.5 py-0.2 rounded bg-brand-light text-brand border border-brand-border">
                             CAD AI
                         </span>
                     </span>
