@@ -65,33 +65,19 @@ export default function Welcome() {
                         AI-ASSISTED 2D FABRIC NESTING OPTIMIZER
                     </div>
 
-                    {/* Headline with Magnifying Glass Decoration */}
+                    {/* Centered Headline */}
                     <div className="relative inline-block max-w-4xl mx-auto">
                         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-charcoal leading-[1.12]">
                             Unlock the Full Potential of <br className="hidden sm:inline" />
-                            <span className="relative inline-block text-brand underline decoration-brand-border decoration-wavy decoration-2">
+                            <span className="text-brand underline decoration-brand-border decoration-wavy decoration-2">
                                 Every Fabric
-                                {/* Magnify Glass Decoration Image */}
-                                <span className="absolute -top-10 -right-16 sm:-top-14 sm:-right-24 md:-top-16 md:-right-28 pointer-events-none select-none z-20">
-                                    <div className="relative">
-                                        <img 
-                                            src="/MagnifyGlass.jpg" 
-                                            alt="Magnify Glass" 
-                                            className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain mix-blend-multiply transform rotate-12 hover:rotate-6 transition-all duration-300 filter contrast-125" 
-                                        />
-                                        {/* Precision Inspection Pill attached to Magnifying Glass */}
-                                        <div className="absolute -bottom-2 right-0 bg-brand text-white text-[9px] sm:text-[10px] font-mono font-semibold px-2 py-0.5 rounded-full shadow-md border border-brand-border flex items-center gap-1 whitespace-nowrap animate-bounce">
-                                            <span>🔍 94.2% Density</span>
-                                        </div>
-                                    </div>
-                                </span>
                             </span>
                         </h1>
                     </div>
 
                     {/* Centered Subtitle */}
                     <p className="text-base sm:text-lg lg:text-xl text-charcoal-muted leading-relaxed max-w-2xl mx-auto font-normal">
-                        Platform tata letak pemotongan kain presisi tinggi bertenaga AI. Maksimalkan efisiensi kain gulungan standar maupun perca tak beraturan (*irregular*), hemat bahan hingga 28%, dan percepat alur potong garmen.
+                        Cara paling mudah dan hemat untuk menata setiap potongan kain Anda secara optimal — setiap lembar kain jadi lebih berharga bersama CutMap!
                     </p>
 
                     {/* Centered Action CTA Buttons */}
@@ -112,28 +98,6 @@ export default function Welcome() {
                         >
                             Eksplor Dashboard Demo
                         </Link>
-                    </div>
-
-                    {/* Centered Trust Indicators */}
-                    <div className="pt-2 flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-charcoal-muted">
-                        <span className="flex items-center gap-1.5">
-                            <svg className="w-4 h-4 text-brand" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                            </svg>
-                            Standar Roll & Irregular Shape
-                        </span>
-                        <span className="flex items-center gap-1.5">
-                            <svg className="w-4 h-4 text-brand" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                            </svg>
-                            Kepatuhan Arah Serat (Grainline)
-                        </span>
-                        <span className="flex items-center gap-1.5">
-                            <svg className="w-4 h-4 text-brand" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                            </svg>
-                            Export SVG Vector CAD
-                        </span>
                     </div>
                 </div>
             </section>
